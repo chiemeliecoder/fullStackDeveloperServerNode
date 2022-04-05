@@ -1,26 +1,24 @@
 {
-  "dependencies": {
-    "axios": "^0.26.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.3"
-  },
-  "name": "fullstackdeveloperservernode",
   "type": "module",
-  "description": "Web Development  working with node.js",
+  "name": "fullstackdeveloperservernode",
+  "description": "Web Development working with node.js",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chiemeliecoder/fullStackDeveloperServerNode.git"
-  },
+  "keywords": [
+    "Node",
+    "REST",
+    "Server",
+    "HTTP"
+  ],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chiemeliecoder/fullStackDeveloperServerNode/issues"
-  },
-  "homepage": "https://github.com/chiemeliecoder/fullStackDeveloperServerNode#readme"
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "node": "^17.7.2"
+  }
 }
