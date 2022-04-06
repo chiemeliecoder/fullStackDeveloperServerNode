@@ -7,12 +7,12 @@ import UserController from "../fullStackDeveloperServerNode/Controllers/UserCont
 import TuitsController from "../fullStackDeveloperServerNode/Controllers/TuitsController.js";
 
 const app = express();
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 HelloController(app);
 UserController(app);
 TuitsController(app);
 app.get('/', (req, res) => {
   res.send('Welcome to Full Stack Development!')
 })
-app.listen(process.env.PORT ||4000);
+app.listen(process.env.PORT ||5000);
