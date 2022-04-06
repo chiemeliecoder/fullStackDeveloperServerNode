@@ -2,9 +2,9 @@
 }
 import express from 'express';
 import cors from 'cors';
-import HelloController from '../fullStackDeveloperServerNode/Controllers/HelloController.js';
-import UserController from "../fullStackDeveloperServerNode/Controllers/UserController.js";
-import TuitsController from "../fullStackDeveloperServerNode/Controllers/TuitsController.js";
+import HelloController from './Controllers/HelloController.js';
+import UserController from "./Controllers/UserController.js";
+import TuitsController from "./Controllers/TuitsController.js";
 
 const app = express();
 app.use(cors());
