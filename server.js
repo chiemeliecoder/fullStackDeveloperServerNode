@@ -6,7 +6,8 @@ import cors from 'cors';
 import HelloController from './Controllers/HelloController.js';
 import UserController from "./Controllers/UserController.js";
 import TuitsController from "./Controllers/TuitsController.js";
-mongoose.connect('mongodb://localhost:27017/webdev'); {/*Mongo*/}
+const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://localhost:27017/webdev'
+mongoose.connect(CONNECTION_STRING);
 
 
 const app = express();
