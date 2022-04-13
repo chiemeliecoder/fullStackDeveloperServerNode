@@ -18,6 +18,7 @@ HelloController(app);
 UserController(app);
 TuitsController(app);
 app.get('/', (req, res) => {
-  res.send('Welcome to Full Stack Development!')
+  res.send('Welcome to Full Stack Development! Hello Friend')
+
 })
 app.listen(process.env.PORT ||4000);

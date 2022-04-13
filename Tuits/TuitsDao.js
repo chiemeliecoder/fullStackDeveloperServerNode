@@ -1,4 +1,4 @@
-import TuitsModel from "./TuitsModel";
+import TuitsModel from "./TuitsModel.js";
 
 export const findAllTuits = () => TuitsModel.find();
 

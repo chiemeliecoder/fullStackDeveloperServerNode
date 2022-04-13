@@ -1,4 +1,4 @@
-import TuitsDao from "../Tuits/TuitsDao.js"
+import * as TuitsDao from "../Tuits/TuitsDao.js"
 
 const createTuit = async (req, res) => {
   const newTuit = req.body;
