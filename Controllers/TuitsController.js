@@ -3,12 +3,6 @@ import * as TuitsDao from "../Tuits/TuitsDao.js"
 const createTuit = async (req, res) => {
   const newTuit = req.body;
   const insertedTuit = await TuitsDao.createTuit(newTuit);
-  newTuit._id = (new Date()).getTime() + '';
-  newTuit.likes = 0;
-  newTuit.dislikes = 0;
-  newTuit.handle = "CMelie";
-  newTuit.username ="Chiemelie";
-  newTuit.avatar_image = "https://images.saymedia-content.com/.image/t_share/MTc5NjQ1ODEzMTgwNDA5ODE2/the-tragedy-of-eren-yeager-how-the-character-changes-throughout-attack-on-titan.png"
   res.json(insertedTuit);
 };
 
