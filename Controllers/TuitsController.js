@@ -2,6 +2,8 @@ import * as TuitsDao from "../Tuits/TuitsDao.js"
 
 const createTuit = async (req, res) => {
   const newTuit = req.body;
+  newTuit.likes = Math.floor(Math.random() * 1000);
+  newTuit.dislikes = Math.floor(Math.random() * 1000);
   const insertedTuit = await TuitsDao.createTuit(newTuit);
   res.json(insertedTuit);
 };
